@@ -1,0 +1,12 @@
+Algoritmo ej1
+	definir num1,num2,resultado Como Entero
+	Escribir "Ingrese dos numeros"
+	Leer num1,num2
+	resultado=sumar(num1,num2)
+	Escribir "La suma de los numeros es:",resultado
+FinAlgoritmo
+Funcion retorno <- Sumar(num1 ,num2)
+	Definir retorno Como Entero
+	retorno=num1+num2
+	FinFuncion
+	

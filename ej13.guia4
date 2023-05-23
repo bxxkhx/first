@@ -1,0 +1,20 @@
+Algoritmo ej13
+	Definir num Como Entero
+	Escribir "Ingrese un numero"
+	Leer num
+	Escribir capicua(num)
+	
+FinAlgoritmo
+
+Funcion retorno<-capicua(num)
+	Definir retorno Como Logico
+	Definir invertido,aux como entero
+	aux=num
+	Mientras num<>0
+		
+		invertido=invertido*10 + num mod 10
+		num=trunc(num/10)
+	FinMientras
+	retorno=invertido==aux
+FinFuncion
+	

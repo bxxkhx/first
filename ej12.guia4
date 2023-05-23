@@ -1,0 +1,20 @@
+Algoritmo ej12
+	Definir n Como Entero
+	Escribir "Ingrese un numero"
+	Leer n
+	Escribir "El termino ",n," de la sucesion de fibonacci es:",fibo(n)
+FinAlgoritmo
+Funcion retorno<-fibo(n)
+	Definir retorno,fibo1,fibo2 Como Entero
+	retorno=1
+	fibo1=1
+	fibo2=1
+	Si n>=2 Entonces
+		Para i desde 2 hasta n
+			retorno=fibo1+fibo2
+			fibo2=fibo1
+			fibo1=retorno
+			FinPara
+	FinSi
+FinFuncion
+	

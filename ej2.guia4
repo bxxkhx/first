@@ -1,0 +1,15 @@
+Algoritmo ej2
+	Definir num ,res Como Entero
+	Escribir "Ingresa un numero"
+	Leer num
+	Si par(num) Entonces
+		Escribir "Es par"
+	SiNo 
+		Escribir "Es impar"
+	FinSi
+FinAlgoritmo
+Funcion retorno <-par(num)
+	Definir retorno Como logico
+	retorno=num mod 2 == 0
+	FinFuncion
+	

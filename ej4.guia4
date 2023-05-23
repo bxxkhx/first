@@ -1,0 +1,18 @@
+Algoritmo ej4
+	Definir letra Como Caracter
+	Definir frase como cadena
+	Escribir "Ingrese una frase y luego una letra"
+	Leer frase,letra
+	Escribir "La letra ",letra," se repite ",cantLetras(frase,letra)," veces."
+FinAlgoritmo
+Funcion retorno <-cantLetras(frase,letra)
+	Definir retorno,i Como entero
+	retorno=0
+	Para i<-0 hasta longitud(frase)
+		Si subcadena(frase,i,i)==letra Entonces
+			retorno=retorno+1
+		FinSi
+	FinPara
+FinFuncion
+
+	

@@ -1,0 +1,14 @@
+Algoritmo ej6
+	Definir n como entero
+	Leer n
+	Escribir "La suma de los divisores es ",divisores(n)
+FinAlgoritmo
+Funcion return<-divisores(n)
+	Definir return,i Como Entero
+	return=0
+	Para i<-1 hasta n/2
+		si n mod i==0
+			return=return+i
+		FinSi
+	FinPara
+FinFuncion

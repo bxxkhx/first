@@ -1,0 +1,23 @@
+Algoritmo ej5
+	Definir num Como Entero
+	Escribir "Ingrese un numero"
+	Leer num
+	Escribir Primo(num)
+FinAlgoritmo
+Funcion retorno<-Primo(num)
+	Definir retorno Como Caracter
+	Definir contador Como Entero
+	contador=2
+	Si num==1 Entonces
+		retorno ="Es primo"
+	FinSi
+	Mientras num mod contador<> 0 y contador<> num Hacer
+		contador=contador+1
+	FinMientras
+	Si contador==num Entonces
+		retorno="Es primo"
+	SiNo
+		retorno ="No es primo"
+	FinSi
+FinFuncion
+	

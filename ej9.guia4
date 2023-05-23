@@ -1,0 +1,30 @@
+Algoritmo ej9
+	Definir dia,nombre,turno,festivo como caracter
+	Definir horas como real
+	Escribir "Ingresar nombre del trabajador"
+	Leer nombre
+	Escribir "Ingrese dia de la semana y turno"
+	Leer dia,turno
+	Escribir "fue un dia festivo? S/N"
+	Leer festivo
+	Escribir "Ingrese cantidad de horas trabajadas"
+	Leer horas
+	
+	Escribir nombre, "Tu jornal es ",tarifa(turno,festivo,horas)
+FinAlgoritmo
+Funcion return<-tarifa(turno,festivo,horas)
+	Definir return como real
+	SI turno=="diurno" Entonces
+		return=horas*90
+		Si festivo=="S" Entonces
+			return=return*1.1
+		FinSi
+		
+	SiNo
+		return=horas*125
+		Si festivo=="S" Entonces
+			return=return*1.15
+		FinSi
+	FinSi
+	FinFuncion
+	

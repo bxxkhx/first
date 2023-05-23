@@ -1,0 +1,18 @@
+Algoritmo ej10
+	Definir num Como Entero
+	Escribir "Ingrese un numero"
+	Leer num
+	Escribir suma(num)
+FinAlgoritmo
+Funcion sumatoria<- suma(num)
+	Definir sumatoria como entero
+	sumatoria=0
+	num= abs(num)
+	Mientras num<>0
+		sumatoria=sumatoria+num mod 10
+		num=trunc(num/10)
+		
+	FinMientras
+
+	FinFuncion
+	

@@ -1,0 +1,22 @@
+Algoritmo ej11
+	Definir num Como Entero
+	Leer num
+	Escribir TodosImpares(num)
+FinAlgoritmo
+Funcion return<-TodosImpares(num)
+	Definir return como logico
+	Definir digito como entero
+	return=verdadero 
+	Si num==0 Entonces
+		return=Falso
+	FinSi
+	Mientras num<>0 y return
+		digito=num mod 10
+		si (digito mod 2==0) Entonces
+			return=Falso
+		FinSi
+		num=trunc(num/10)
+	FinMientras
+	
+FinFuncion
+	

@@ -1,0 +1,24 @@
+Algoritmo ej8
+	Definir user,pass Como Caracter
+	Escribir "Ingrese un nombre de usuario"
+	Leer user
+	Escribir "Ingrese la contrasenia"
+	Leer pass
+	Escribir login(user,pass)
+	
+	
+FinAlgoritmo
+Funcion return<-login(usuario,contrasenia)
+	Definir return Como Logico
+	Definir intentos Como Entero
+	intentos=0
+	Mientras usuario<>usuario1 o contrasenia<>asdasd y intentos<2
+		Escribir "Ingrese otro nombre de usuario"
+		leer usuario
+		Escribir "Ingrese otra conrasenia"
+		Leer contrasenia
+		intentos=intentos+1
+	FinMientras
+	return= usuario=="usuario1" y contrasenia=="asdasd"
+	FinFuncion
+	
